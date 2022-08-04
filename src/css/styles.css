@@ -7,7 +7,7 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: #a5edf8;
   color: #212121;
   line-height: 1.5;
 }
@@ -40,7 +40,7 @@ li {
 }
 
 .card-img, .county-img {
-  width: 25px;
+  width: 45px;
   /* height: 25px; */
   margin-right: 10px;
 }
@@ -70,4 +70,9 @@ li {
 
 .country-list-item {
   display: flex;
+  margin-bottom: 5px;
+}
+
+.county-title {
+  font-size: 20px;
 }
