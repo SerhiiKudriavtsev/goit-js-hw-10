@@ -18,3 +18,56 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+.box {
+  position: absolute;
+  top: 40%;
+  left: 41%;
+}
+
+ul, p {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.card-main {
+  display: flex;
+  align-items: center;
+}
+
+.card-img, .county-img {
+  width: 25px;
+  /* height: 25px; */
+  margin-right: 10px;
+}
+
+.card-title {
+  font-size: 30px;
+  margin: 0;
+}
+
+.card-body>p,
+.card-languages {
+  margin-top: 10px;
+}
+
+
+.list-group-item:not(:first-child)::before {
+  content: ',';
+}
+
+.card-languages {
+  display: flex;
+}
+
+.list-group {
+  display: flex;
+}
+
+.country-list-item {
+  display: flex;
+}
