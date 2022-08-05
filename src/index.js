@@ -27,7 +27,7 @@ function onSearch(e) {
     const searchQery = refs.searchBox.value.trim();
     fetchCountries(searchQery)
       .then(renderCountryCard)
-      .catch(error => console.log('Oops, there is no country with that name'))
+      .catch(error => Notiflix.Notify.failure('Oops, there is no country with that name'))
   }
   else {
     refs.cardConteiner.innerHTML = [];
@@ -35,9 +35,6 @@ function onSearch(e) {
   }
 
 function renderCountryCard(countries) {
-  if (countries.status === 404) {
-    Notiflix.Notify.failure('Oops, there is no country with that name');
-  }
   if (countries.length > 10) {
     refs.cardConteiner.innerHTML = [];
     Notiflix.Notify.info('Too many matches found. Please enter a more specific name.');
