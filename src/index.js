@@ -7,8 +7,9 @@ const debounce = require('lodash.debounce');
 import fetchCountries from './fetchCountries';
 
 Notiflix.Notify.init({
-  position: 'center-center'
-})
+  position: 'center-center',
+  clickToClose: true,
+});
 
 const DEBOUNCE_DELAY = 300;
 let markup;
